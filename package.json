@@ -1,0 +1,32 @@
+{
+  "name": "layout-authentication-v1",
+  "version": "1.0.0",
+  "main": "server-side/server.js",
+  
+    "scripts": {
+      "dev": "cross-env NODE_ENV=development nodemon server-side/server.js",
+      "start": "cross-env NODE_ENV=production node server-side/server.js",
+      "build": "npm install && npm install --prefix client-side && npm run build --prefix client-side"
+    }
+  ,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mailtrap": "^3.4.0",
+    "mongoose": "^8.9.4"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^3.1.9"
+  }
+}
